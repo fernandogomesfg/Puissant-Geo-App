@@ -1,0 +1,52 @@
+<template>
+  <q-footer class="bg-transparent">
+    <div class="q-pa-sm" >
+      <q-tabs
+        style="border-radius: 50px"
+        v-model="tab"
+        class="bg-white text-grey shadow-2"
+        indicator-color="transparent"
+        active-color="primary"
+      >
+
+        <q-tab>
+          <q-route-tab
+            to="/"
+            exact
+            name="computer"
+            icon="public"
+          />
+        </q-tab>
+
+        <q-tab>
+          <q-route-tab
+            to="/piechart"
+            exact
+            name="pie_chart"
+            icon="public_off"
+          />
+        </q-tab>
+      </q-tabs>
+
+
+    </div>
+  </q-footer>
+</template>
+
+<script>
+import { defineComponent, ref } from 'vue'
+
+export default defineComponent({
+  name: 'FooterComponent',
+
+  setup(){
+    const tab = ref('mail')
+
+
+    return{
+      tab
+    }
+  }
+})
+
+</script>
