@@ -13,16 +13,16 @@
           <q-route-tab
             to="/"
             exact
-            name="computer"
+            name=""
             icon="public"
           />
         </q-tab>
 
         <q-tab>
           <q-route-tab
-            to="/piechart"
+            to="/inverso"
             exact
-            name="pie_chart"
+            name=""
             icon="public_off"
           />
         </q-tab>
