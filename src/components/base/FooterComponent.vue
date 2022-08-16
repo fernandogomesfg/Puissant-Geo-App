@@ -13,7 +13,7 @@
           <q-route-tab
             to="/"
             exact
-            name=""
+            name="public"
             icon="public"
           />
         </q-tab>
@@ -22,7 +22,7 @@
           <q-route-tab
             to="/inverso"
             exact
-            name=""
+            name="public_off"
             icon="public_off"
           />
         </q-tab>
